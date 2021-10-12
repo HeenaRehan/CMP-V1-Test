@@ -12,6 +12,7 @@
 	
 <script>
 window.addEventListener("ucConsentsEvent", function (e) {
+	console.log("listener got", e.data)
     if(e.data.event == "consent_changed"){
     location.reload();
     }
