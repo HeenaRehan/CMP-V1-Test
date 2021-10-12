@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head> 
-<script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="arL_G7jv7" ></script>
+    <link rel="preconnect" href="//app.usercentrics.eu">
+    <link rel="preconnect" href="//api.usercentrics.eu">
+    <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
+    <link rel="preload" href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" as="script">
+    <!--Site RELOAD Zustimmung -->
+    <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+	
+<script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="ZVQN5qwpc" ></script>
+	
+<script>
+var page = 0;
+window.addEventListener("nameOfYourWindowEvent", function (e) {
+    if(e.data.event == "consent_changed" && page == 0){
+    page=1;
+    }
+    else{
+if(e.data.event == "consent_changed" && page == 1){
+    location.reload();
+    }
+});
+</script>
 	
 </head>	
 <body> 
